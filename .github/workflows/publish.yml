@@ -33,6 +33,6 @@ jobs:
         with: 
           container_name: $web
           extra_args: "--destination-path potential-adventure/"
-          connection_string: "${{ secrets.AZURE_CONNECTION_STRING }}"
+          connection_string: ${{ secrets.AZURE_CONNECTION_STRING }}
           source_dir: public
           sync: true
