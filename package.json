@@ -4,8 +4,8 @@
   "description": "It's (j)ust (e)leventy and (t)ailwind … OK, and a few other things; it's still *really* small though.",
   "scripts": {
     "clean": "rimraf public src/css/styles.css",
-    "dev": "npm run clean && postcss src/css/tailwind.css > src/css/styles.css && eleventy --serve",
-    "build": "npm run clean && NODE_ENV=production postcss src/css/tailwind.css > src/css/styles.css && eleventy"
+    "dev": "pnpm clean && postcss src/css/tailwind.css > src/css/styles.css && eleventy --serve",
+    "build": "pnpm clean && cross-env NODE_ENV=production postcss src/css/tailwind.css > src/css/styles.css && eleventy"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
     "autoprefixer": "^10.3.7",
+    "cross-env": "^7.0.3",
     "cssnano": "^5.0.8",
     "postcss": "^8.3.11",
     "postcss-cli": "^9.0.1",
