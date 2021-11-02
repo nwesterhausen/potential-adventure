@@ -3,10 +3,24 @@ module.exports = {
   purge: {
     content: ['./src/**/*.html']
   },
-  darkMode: false, // or 'media' or 'class'
+  //darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
   },
   variants: {},
-  plugins: [],
+  plugins: [
+    require('daisyui'),
+  ],
+  // config (optional)
+  daisyui: {
+    styled: true,
+    themes: [
+      'dark',
+      'emerald'
+    ],
+    base: true,
+    utils: true,
+    logs: true,
+    rtl: false,
+  },
 }

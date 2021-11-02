@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,7 +13,9 @@
 
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
-  <body>
-    <main>{{ content | safe }}</main>
+  <body class="flex flex-col min-h-screen">
+    {% include partials/header.html %}
+    <main class="flex-grow">{{ content | safe }}</main>
+    {% include partials/footer.html %}
   </body>
 </html>
