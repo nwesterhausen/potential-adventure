@@ -2,13 +2,14 @@ lockfileVersion: 5.3
 
 specifiers:
   '@11ty/eleventy': ^0.12.1
-  autoprefixer: ^10.3.7
+  autoprefixer: ^10.4.0
   cross-env: ^7.0.3
-  cssnano: ^5.0.8
+  cssnano: ^5.0.9
   postcss: ^8.3.11
   postcss-cli: ^9.0.1
+  prettier: ^2.4.1
   rimraf: ^3.0.2
-  tailwindcss: ^2.2.17
+  tailwindcss: ^2.2.19
 
 devDependencies:
   '@11ty/eleventy': 0.12.1
@@ -17,6 +18,7 @@ devDependencies:
   cssnano: 5.0.9_postcss@8.3.11
   postcss: 8.3.11
   postcss-cli: 9.0.1_postcss@8.3.11
+  prettier: 2.4.1
   rimraf: 3.0.2
   tailwindcss: 2.2.19_0c54bdadaf9d9c9c6c134cb2c6c061a3
 
@@ -2595,6 +2597,12 @@ packages:
       nanoid: 3.1.30
       picocolors: 1.0.0
       source-map-js: 0.6.2
+    dev: true
+
+  /prettier/2.4.1:
+    resolution: {integrity: sha512-9fbDAXSBcc6Bs1mZrDYb3XKzDLm4EXXL9sC1LqKP5rZkT6KRr/rf9amVUcODVXgguK/isJz0d0hP72WeaKWsvA==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
     dev: true
 
   /pretty-hrtime/1.0.3:

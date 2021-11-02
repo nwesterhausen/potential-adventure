@@ -3,9 +3,10 @@
   "version": "2.0.0",
   "description": "It's (j)ust (e)leventy and (t)ailwind … OK, and a few other things; it's still *really* small though.",
   "scripts": {
-    "clean": "rimraf public src/css/styles.css",
+    "clean": "rimraf public src/css/styles.css && pnpm pretty",
     "dev": "pnpm clean && postcss src/css/tailwind.css > src/css/styles.css && eleventy --serve",
-    "build": "pnpm clean && cross-env NODE_ENV=production postcss src/css/tailwind.css > src/css/styles.css && eleventy"
+    "build": "pnpm clean && cross-env NODE_ENV=production postcss src/css/tailwind.css > src/css/styles.css && eleventy",
+    "pretty": "prettier --write src/** --ignore-unknown"
   },
   "repository": {
     "type": "git",
@@ -31,7 +32,12 @@
     "cssnano": "^5.0.9",
     "postcss": "^8.3.11",
     "postcss-cli": "^9.0.1",
+    "prettier": "^2.4.1",
     "rimraf": "^3.0.2",
     "tailwindcss": "^2.2.19"
+  },
+  "prettier": {
+    "printWidth": 144,
+    "proseWrap": "always"
   }
 }
