@@ -1,3 +1,5 @@
+[![Publish Site to Azure](https://github.com/nwesterhausen/potential-adventure/actions/workflows/publish.yml/badge.svg?branch=main)](https://github.com/nwesterhausen/potential-adventure/actions/workflows/publish.yml)
+
 # potential-adventure
 
 Used the generated name suggested by github for this repo. Going to try using 11ty 
