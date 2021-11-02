@@ -11,6 +11,7 @@ specifiers:
   prettier: ^2.4.1
   rimraf: ^3.0.2
   tailwindcss: ^2.2.19
+  watch: ^1.0.2
 
 devDependencies:
   '@11ty/eleventy': 0.12.1
@@ -23,6 +24,7 @@ devDependencies:
   prettier: 2.4.1
   rimraf: 3.0.2
   tailwindcss: 2.2.19_0c54bdadaf9d9c9c6c134cb2c6c061a3
+  watch: 1.0.2
 
 packages:
 
@@ -1126,6 +1128,12 @@ packages:
     resolution: {integrity: sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw==}
     dev: true
 
+  /exec-sh/0.2.2:
+    resolution: {integrity: sha512-FIUCJz1RbuS0FKTdaAafAByGS0CPvU3R0MeHxgtl+djzCc//F8HakL8GzmVNZanasTbTAY/3DRFA0KpVqj/eAw==}
+    dependencies:
+      merge: 1.2.1
+    dev: true
+
   /extend-shallow/2.0.1:
     resolution: {integrity: sha1-Ua99YUrZqfYQ6huvu5idaxxWiQ8=}
     engines: {node: '>=0.10.0'}
@@ -1874,6 +1882,10 @@ packages:
 
   /mdurl/1.0.1:
     resolution: {integrity: sha1-/oWy7HWlkDfyrf7BAP1sYBdhFS4=}
+    dev: true
+
+  /merge/1.2.1:
+    resolution: {integrity: sha512-VjFo4P5Whtj4vsLzsYBu5ayHhoHJ0UqNm7ibvShmbmoz7tGi0vXaoJbGdB+GmDMLUdg8DpQXEIeVDAe8MaABvQ==}
     dev: true
 
   /merge2/1.4.1:
@@ -3361,6 +3373,15 @@ packages:
   /void-elements/3.1.0:
     resolution: {integrity: sha1-YU9/v42AHwu18GYfWy9XhXUOTwk=}
     engines: {node: '>=0.10.0'}
+    dev: true
+
+  /watch/1.0.2:
+    resolution: {integrity: sha1-NApxe952Vyb6CqB9ch4BR6VR3ww=}
+    engines: {node: '>=0.1.95'}
+    hasBin: true
+    dependencies:
+      exec-sh: 0.2.2
+      minimist: 1.2.5
     dev: true
 
   /which-module/2.0.0:

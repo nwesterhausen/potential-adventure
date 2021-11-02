@@ -1,16 +1,19 @@
 {
-  "name": "jet",
-  "version": "2.0.0",
-  "description": "It's (j)ust (e)leventy and (t)ailwind … OK, and a few other things; it's still *really* small though.",
+  "name": "potential-adventure",
+  "version": "1.0.0",
+  "description": "Experimental story blog",
   "scripts": {
     "clean": "rimraf public src/css/styles.css && pnpm pretty",
-    "dev": "pnpm clean && postcss src/css/tailwind.css -o src/css/styles.css && eleventy --serve",
-    "build": "pnpm clean && cross-env NODE_ENV=production postcss src/css/tailwind.css -o src/css/styles.css && eleventy",
+    "watch": "watch \"pnpm dev\" src",
+    "dev": "pnpm clean && pnpm dev:css && eleventy --serve",
+    "dev:css": "postcss src/css/tailwind.css -o public/css/styles.css",
+    "build": "pnpm clean && pnpm build:css && eleventy",
+    "build:css": "cross-env NODE_ENV=production postcss src/css/tailwind.css -o src/css/styles.css",
     "pretty": "prettier --write --ignore-unknown \"src/**\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://marcamos@github.com/marcamos/jet.git"
+    "url": "git@github.com:nwesterhausen/potential-adventure.git"
   },
   "keywords": [
     "eleventy",
@@ -19,7 +22,7 @@
     "tailwindcss",
     "purgecss"
   ],
-  "author": "marc amos",
+  "author": "Nicholas Westerhausen",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/marcamos/jet/issues"
@@ -35,7 +38,8 @@
     "postcss-cli": "^9.0.1",
     "prettier": "^2.4.1",
     "rimraf": "^3.0.2",
-    "tailwindcss": "^2.2.19"
+    "tailwindcss": "^2.2.19",
+    "watch": "^1.0.2"
   },
   "prettier": {
     "printWidth": 144,
