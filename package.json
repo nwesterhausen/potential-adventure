@@ -6,7 +6,7 @@
     "clean": "rimraf public src/css/styles.css && pnpm pretty",
     "dev": "pnpm clean && postcss src/css/tailwind.css > src/css/styles.css && eleventy --serve",
     "build": "pnpm clean && cross-env NODE_ENV=production postcss src/css/tailwind.css > src/css/styles.css && eleventy",
-    "pretty": "prettier --write src/** --ignore-unknown"
+    "pretty": "prettier --write --ignore-unknown \"src/**\""
   },
   "repository": {
     "type": "git",
