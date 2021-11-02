@@ -2,6 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@11ty/eleventy': ^0.12.1
+  '@tailwindcss/typography': ^0.4.1
   autoprefixer: ^10.4.0
   cross-env: ^7.0.3
   cssnano: ^5.0.9
@@ -15,6 +16,7 @@ specifiers:
 
 devDependencies:
   '@11ty/eleventy': 0.12.1
+  '@tailwindcss/typography': 0.4.1_tailwindcss@2.2.19
   autoprefixer: 10.4.0_postcss@8.3.11
   cross-env: 7.0.3
   cssnano: 5.0.9_postcss@8.3.11
@@ -129,6 +131,18 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.13.0
+    dev: true
+
+  /@tailwindcss/typography/0.4.1_tailwindcss@2.2.19:
+    resolution: {integrity: sha512-ovPPLUhs7zAIJfr0y1dbGlyCuPhpuv/jpBoFgqAc658DWGGrOBWBMpAWLw2KlzbNeVk4YBJMzue1ekvIbdw6XA==}
+    peerDependencies:
+      tailwindcss: '>=2.0.0'
+    dependencies:
+      lodash.castarray: 4.4.0
+      lodash.isplainobject: 4.0.6
+      lodash.merge: 4.6.2
+      lodash.uniq: 4.5.0
+      tailwindcss: 2.2.19_0c54bdadaf9d9c9c6c134cb2c6c061a3
     dev: true
 
   /@trysound/sax/0.2.0:
@@ -1792,6 +1806,10 @@ packages:
       p-locate: 4.1.0
     dev: true
 
+  /lodash.castarray/4.4.0:
+    resolution: {integrity: sha1-wCUTUV4wna3dTCTGDP3c9ZdtkRU=}
+    dev: true
+
   /lodash.difference/4.5.0:
     resolution: {integrity: sha1-nMtOUF1Ia5FlE0V3KIWi3yf9AXw=}
     dev: true
@@ -1812,8 +1830,16 @@ packages:
     resolution: {integrity: sha1-+4m2WpqAKBgz8LdHizpRBPiY67M=}
     dev: true
 
+  /lodash.isplainobject/4.0.6:
+    resolution: {integrity: sha1-fFJqUtibRcRcxpC4gWO+BJf1UMs=}
+    dev: true
+
   /lodash.memoize/4.1.2:
     resolution: {integrity: sha1-vMbEmkKihA7Zl/Mj6tpezRguC/4=}
+    dev: true
+
+  /lodash.merge/4.6.2:
+    resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
     dev: true
 
   /lodash.sortby/4.7.0:
