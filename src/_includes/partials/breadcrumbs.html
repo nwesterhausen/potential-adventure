@@ -1,11 +1,12 @@
 <div class="text-sm breadcrumbs">
   <ul>
+    <li>{% include "icons/fa-map.html", width: 16, height: 16 %} &NonBreakingSpace; <a href="/{{worldname | slugify}}/">{{worldname}}</a></li>
+    {% if fortname and fortname != "" %}
     <li>
-      <a> {% include icons/fa-map.html, width: 16, height: 16 %} &NonBreakingSpace; {{ worldname }} </a>
+      {% include "icons/fa-chess-rook.html", width: 16, height: 16 %} &NonBreakingSpace;
+      <a href="/{{worldname | slugify}}/{{fortname | slugify}}">{{fortname}}</a>
     </li>
-    {% if groupname and groupname != "" %}
-    <li>{% include icons/fa-users.html, width: 16, height: 16 %} &NonBreakingSpace; {{groupname}}</li>
-    {% endif %} {% if title != worldname %}
+    {% endif %} {% if title != worldname and title != fortname %}
     <li>
       <a> {{ title }} </a>
     </li>
