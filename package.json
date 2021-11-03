@@ -44,6 +44,9 @@
   },
   "prettier": {
     "printWidth": 144,
-    "proseWrap": "always"
+    "proseWrap": "always",
+    "endOfLine": "lf",
+    "tabWidth": 2,
+    "useTabs": false
   }
 }

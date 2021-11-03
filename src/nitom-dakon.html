@@ -10,20 +10,11 @@ worldname: Nitom Dakon
 <div class="my-4">
   <p>Currently in the Age of Myth.</p>
 </div>
-
-<div class="container grid grid-cols-row auto-cols-4 md:auto-rows-1">
-  <div>
-    <div class="card shadow-xl image-full max-w-sm">
-      <figure class="h-36">
-        <img src="/img/nitomdakon_worldmap.png" />
-      </figure>
-      <div class="justify-end card-body">
-        <h2 class="card-title">World Maps</h2>
-        <p>View full size maps and other information about Nitom Dakon at large.</p>
-        <div class="card-actions">
-          <button class="btn btn-primary" href="/nitomdakon/geography">Geography</button>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+  <!-- Card w/ link to geography and maps -->
+  {% include components/card.html, imgsrc:"/img/nitomdakon_worldmap.png", cardtitle: "World Maps", cardtext: "View full size maps and other
+  information about Nitom Dakon at large.", actionhref: "/nitom-dakon/geography/", actiontext: "Visit Geography" %}
+  <!-- Card w/ link to Fortress1 -->
+  {% include components/card.html, imgsrc:"/img/nitomdakon_worldmap.png", cardtitle: "Embark1", cardtext: "Read the story of $groupname and
+  their embark to the $locationname.", actionhref: "/nitom-dakon/embark1/", actiontext: "Read" %}
 </div>
