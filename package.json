@@ -47,6 +47,12 @@
     "proseWrap": "always",
     "endOfLine": "lf",
     "tabWidth": 2,
-    "useTabs": false
+    "useTabs": false,
+    "overrides": [
+      {
+        "files": "*.liquid",
+        "options": { "parser": "html" }
+      }
+    ]
   }
 }

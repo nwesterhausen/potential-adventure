@@ -1,0 +1,17 @@
+<div class="text-sm breadcrumbs">
+  <ul>
+    <li>{% include "icons/fa-globe" %} &NonBreakingSpace; <a href="/{{worldname | slugify}}/">{{worldname}}</a></li>
+    {% if fortname and fortname != "" %}
+    <li>
+      {% include "icons/fa-chess-rook" %} &NonBreakingSpace;
+      <a href="/{{worldname | slugify}}/{{fortname | slugify}}">{{fortname}}</a>
+      {% if civname and civname != "" %} &NonBreakingSpace; of &NonBreakingSpace; {% include "icons/fa-mountain" %} &NonBreakingSpace;
+      {{civname}} {% endif %}
+    </li>
+    {% endif %} {% if title != worldname and title != fortname %}
+    <li>
+      <a> {{ title }} </a>
+    </li>
+    {% endif %}
+  </ul>
+</div>

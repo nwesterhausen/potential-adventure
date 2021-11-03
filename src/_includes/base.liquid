@@ -14,12 +14,10 @@
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body class="flex flex-col min-h-screen">
-    {% include "partials/header.html" %}
+    {% include "partials/header" %}
     <main class="flex-grow mx-10">
-      {% if worldname and worldname != "" %} {% include "partials/breadcrumbs.html" %}
-      <br />
-      {% endif %} {{ content}}
+      {% if worldname and worldname != "" %} {% include "partials/breadcrumbs" %} {% endif %} {% block content %} Empty Page {% endblock %}
     </main>
-    {% include "partials/footer.html" %}
+    {% include "partials/footer" %}
   </body>
 </html>
