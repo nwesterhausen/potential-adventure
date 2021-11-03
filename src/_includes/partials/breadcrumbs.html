@@ -5,8 +5,7 @@
     </li>
     {% if groupname and groupname != "" %}
     <li>{% include icons/fa-users.html, width: 16, height: 16 %} &NonBreakingSpace; {{groupname}}</li>
-    {% endif %}
-    {% if title != worldname %}
+    {% endif %} {% if title != worldname %}
     <li>
       <a> {{ title }} </a>
     </li>
