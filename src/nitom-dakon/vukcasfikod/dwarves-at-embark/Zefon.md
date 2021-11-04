@@ -2,7 +2,7 @@
 Name: Zefon Bernokim
 TranslatedName: Earthochre
 Profession: Armorer
-Deity: Doren Sosadosram Dorenstettad
+Deities: Doren Sosadosram Dorenstettad
 KindredSpirits: ["Ònul", "Logan", "Astesh", "Edëm", "Solon"]
 CloseFriends: ["Unib"]
 Friends: []

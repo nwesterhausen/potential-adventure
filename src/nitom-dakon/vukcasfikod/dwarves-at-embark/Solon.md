@@ -2,7 +2,7 @@
 Name: Solon Olintun
 TranslatedName: Tongsdoors
 Profession: Mason
-Deity: Doren Sosadosram Dorenstettad
+Deities: Doren Sosadosram Dorenstettad
 KindredSpirits: ["Edëm"]
 CloseFriends: ["Unib", "Zefon", "Kogan", "Astesh"]
 Friends: ["Ònul"]

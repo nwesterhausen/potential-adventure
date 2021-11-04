@@ -2,7 +2,7 @@
 Name: Ònul Idokcilob
 TranslatedName: Pointedroof
 Profession: Weaponsmith
-Deity: Izeg Asàs Ishlum
+Deities: Izeg Asàs Ishlum
 KindredSpirits: ["Kogan", "Astesh", "Edëm", "Solon"]
 CloseFriends: ["Zefon"]
 Friends: ["Unib"]

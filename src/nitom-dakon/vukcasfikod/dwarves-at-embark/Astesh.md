@@ -2,7 +2,7 @@
 Name: Astesh Konosulåb
 TranslatedName: Brasssquirt
 Profession: expedition leader
-Deity: Izeg Asàs Ishlum
+Deities: Izeg Asàs Ishlum
 KindredSpirits: ["Unib", "Edëm", "Solon"]
 CloseFriends: ["Zefon", "Ònul", "Kogan"]
 Friends: []

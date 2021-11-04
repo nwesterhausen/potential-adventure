@@ -2,7 +2,7 @@
 Name: Unib Sobìrkulet
 TranslatedName: Releaseabbeys
 Profession: Engraver
-Deity: Doren Sosadosram Dorenstettad
+Deities: Doren Sosadosram Dorenstettad
 KindredSpirits: ["Zefon", "Astesh", "Edëm", "Solon"]
 CloseFriends: ["Ònul", "Kogan"]
 Friends: []

@@ -2,7 +2,7 @@
 Name: Kogan Rakustil
 TranslatedName: Tombwords
 Profession: Gem Setter
-Deity: Zulban Äkim
+Deities: Zulban Äkim
 KindredSpirits: ["Astesh", "Solon"]
 CloseFriends: ["Zefon", "Ònul", "Edëm"]
 Friends: ["Unib"]

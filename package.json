@@ -9,6 +9,7 @@
     "dev": "pnpm dev:css && eleventy",
     "dev:css": "postcss src/css/tailwind.css -o public/css/styles.css",
     "build": "pnpm clean && pnpm pretty && pnpm build:css && eleventy",
+    "build:publish": "pnpm clean && pnpm build:css && eleventy",
     "build:css": "cross-env NODE_ENV=production postcss src/css/tailwind.css -o public/css/styles.css"
   },
   "repository": {

@@ -2,7 +2,7 @@
 Name: Edëm Oddomthad
 TranslatedName: Cloistercrowd
 Profession: Mechanic
-Deity: Izeg Asàs Ishlum
+Deities: Izeg Asàs Ishlum
 KindredSpirits: []
 CloseFriends: ["Ònul", "Logan", "Astesh", "Unib", "Kogan", "Solon"]
 Friends: []
