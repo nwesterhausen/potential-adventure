@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="dracula">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,8 +16,10 @@
   <body class="flex flex-col min-h-screen">
     {% include "partials/header" %}
     <main class="flex-grow mx-10">
-      {% if worldname and worldname != "" %} {% include "partials/breadcrumbs" %} {% endif %} {% block content %} Empty Page {% endblock %}
+      {% if worldname and worldname != "" %} {% include "partials/breadcrumbs" %} {% endif %} {% block content %} {{
+      content }} {% endblock %}
     </main>
-    {% include "partials/footer" %}
+    {% include "partials/footer" %} {% comment %} Script includes {% endcomment %}
+    <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
   </body>
 </html>

@@ -5,8 +5,8 @@
     <li>
       {% include "icons/fa-chess-rook" %} &NonBreakingSpace;
       <a href="/{{worldname | slugify}}/{{fortname | slugify}}">{{fortname}}</a>
-      {% if civname and civname != "" %} &NonBreakingSpace; of &NonBreakingSpace; {% include "icons/fa-mountain" %} &NonBreakingSpace;
-      {{civname}} {% endif %}
+      {% if civname and civname != "" %} &NonBreakingSpace; of &NonBreakingSpace; {% include "icons/fa-mountain" %}
+      &NonBreakingSpace; {{civname}} {% endif %}
     </li>
     {% endif %} {% if title != worldname and title != fortname %}
     <li>

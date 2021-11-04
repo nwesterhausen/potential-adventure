@@ -1,0 +1,25 @@
+<div class="card shadow-lg">
+  <div class="card-body">
+    <div class="card-title">{{dwarf.Name}} ("{{dwarf.TranslatedName}}")</div>
+
+    <div class="badge">{{dwarf.JoinedAt}}</div>
+
+    <h2>Profession</h2>
+    <div class="mb-2">{{ dwarf.Profession }}</div>
+
+    <h2>Religion</h2>
+    <div class="mb-2">
+      <div data-tip="Deity" class="tooltip">{% include "icons/fa-person-praying" %}{{ dwarf.Deity }}</div>
+    </div>
+    <h2>Relationships</h2>
+    <div>
+      {% for name in dwarf.KindredSpirits %}
+      <div data-tip="Kindred Spirit" class="tooltip">{% include "icons/fa-face-grin-hearts" %}{{name}}</div>
+      {% endfor %} {% for name in dwarf.CloseFriends %}
+      <div data-tip="Close Friend" class="tooltip">{% include "icons/fa-face-grin-beam" %}{{name}}</div>
+      {% endfor %} {% for name in dwarf.Friends %}
+      <div data-tip="Friend" class="tooltip">{% include "icons/fa-face-smile" %}{{name}}</div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

@@ -1,8 +1,10 @@
 <div tabindex="0" class="collapse hover:bg-white hover:bg-opacity-5">
-  <div class="collapse-title text-xl font-medium">{{id}}. {{ storytitle }}</div>
+  <input type="checkbox" />
+  <div class="collapse-title text-xl font-medium">{{ storytitle }}</div>
   <div class="collapse-content">
-    <span class="badge badge-sm">{{ storyauthor }}</span>
-    <p>{{ storycontent }}</p>
+    <span class="badge badge-sm italic">Told by {{ storyauthor }}</span>
+    <p class="mb-2">{{ storylead }}</p>
+    <a class="btn btn-sm" href="{{ storyurl }}">Read</a>
     <br />
   </div>
 </div>

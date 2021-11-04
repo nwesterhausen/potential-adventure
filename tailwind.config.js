@@ -16,8 +16,8 @@ module.exports = {
   daisyui: {
     styled: true,
     themes: [
-      'dark',
-      'emerald'
+      'dracula',
+      'garden'
     ],
     base: true,
     utils: true,

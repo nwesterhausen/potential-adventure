@@ -1,4 +1,5 @@
-{% unless width %} {% assign width = 16 %} {% endunless %} {% unless height %} {% assign height=16 %} {% endunless %}
+{% unless width %} {% assign width = 16 %} {% endunless %} {% unless height %} {% assign height=16 %} {% endunless %} {%
+if size %} {% assign width = size %} {% assign height = size %} {% endif %}
 
 <svg
   width="{{ width }}"

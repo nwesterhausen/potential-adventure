@@ -43,7 +43,7 @@
     "watch": "^1.0.2"
   },
   "prettier": {
-    "printWidth": 144,
+    "printWidth": 120,
     "proseWrap": "always",
     "endOfLine": "lf",
     "tabWidth": 2,

@@ -1,18 +1,35 @@
-{% layout "base" %} {% assign title = "Vukcasfikod" %} {% assign worldname = "Nitom Dakon" %} {% assign civname = "Asob Idith" %} {% assign
-fortname = "Vukcasfikod" %} {% block content %}
+{% layout "base" %} {% assign title = "Vukcasfikod" %} {% assign worldname = "Nitom Dakon" %} {% assign civname = "Asob
+Idith" %} {% assign fortname = "Vukcasfikod" %} {% block content %}
+
 <div class="quote">
   <p>You have arrived.</p>
   <p>
-    After a journey from the Mountainhomes into the forbidding wilderness beyond, your harsh trek has finally ended. Your party of seven is to
-    make an outpost for the glory of all of Asob Idith. There are almost no supplies left, but with stout labor comes sustenance. Whether by
-    bolt, plow or hook, provide for your dwarves.
+    After a journey from the Mountainhomes into the forbidding wilderness beyond, your harsh trek has finally ended.
+    Your party of seven is to make an outpost for the glory of all of Asob Idith. There are almost no supplies left, but
+    with stout labor comes sustenance. Whether by bolt, plow or hook, provide for your dwarves.
   </p>
   <p>
-    You are expecting a supply caravan just before winter entombs you, but it is Spring now. Enough time to delve secure lodgings, ere the dingo
-    men get hungry. A new chapter of dwarven history begins here at this place, Vukcasfikod, "Crescentglazes".
+    You are expecting a supply caravan just before winter entombs you, but it is Spring now. Enough time to delve secure
+    lodgings, ere the dingo men get hungry. A new chapter of dwarven history begins here at this place, Vukcasfikod,
+    "Crescentglazes".
   </p>
   <p>Strike the earth!</p>
 </div>
+
 <h1>Stories</h1>
-{% for story in collections.stories %} {{ story.title }} {% include "partials/collapse", storytitle: story.title, storycontent:
-story.templateContent, storyauthor: story.author %} {% endfor %} {% endblock %}
+{% for story in collections.vukcasfikodStories %} {% include "partials/collapse", storytitle: story.data.title,
+storylead: story.data.summary, storyauthor: story.data.author, storyurl: story.url %} {% endfor %}
+
+<h1>Dwarves</h1>
+<div class="collapse collapse-arrow">
+  <input type="checkbox" />
+  <div class="collapse-title">The Embarking 7, snapshot from Granite of year 700</div>
+  <div class="collapse-content">
+    <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-2">
+      {% for dwarf in collections.vukcasfikodDwarvesEmbark %} {% include "components/dwarf-card", dwarf: dwarf.data %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% endblock %}

@@ -1,4 +1,8 @@
 {
-  "tags": "vukcasfikod-stories",
-  "permalink": false
+  "tags": ["vukcasfikod", "story", "vukcasfikodStories"],
+  "layout": "base",
+  "civname": "Asob Idith",
+  "fortname": "Vukcasfikod",
+  "groupname": "",
+  "worldname": "Nitom Dakon"
 }
