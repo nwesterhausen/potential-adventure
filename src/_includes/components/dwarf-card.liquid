@@ -1,16 +1,16 @@
 <div class="card shadow-lg">
   <div class="card-body">
-    <div class="card-title">
-      {{dwarf.Name}} ("{{dwarf.TranslatedName}}")
-      <div class="badge">{{dwarf.JoinedAt}}</div>
+    <div class="card-title text-base">
+        <span data-tip="{{dwarf.TranslatedName}}" class="tooltip" >{{dwarf.Name}}</span>
+        <div class="badge badge-sm">{{dwarf.JoinedAt}}</div>    
+        <div class="badge badge-sm badge-primary">{{ dwarf.Profession }}</div>
     </div>
 
     {% include "components/quote-line", quote: dwarf.Quote %}
 
-    <h2>Profession</h2>
-    <div class="mb-2">{{ dwarf.Profession }}</div>
-
-    <h2>Relationships</h2>
-    <div>{% include "components/dwarf-relationships", dwarf: dwarf %}</div>
+    <span class="font-semibold">Relationships</span>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-1 text-black">
+      {% include "components/dwarf-relationships", dwarf: dwarf %}
+    </div>
   </div>
 </div>
