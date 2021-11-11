@@ -5,10 +5,9 @@
   "scripts": {
     "clean": "rimraf public/* src/css/styles.css",
     "watch": "pnpm clean && watch \"pnpm dev\" src",
-    "pretty": "prettier --write --ignore-unknown \"src/**\"",
     "dev": "pnpm dev:css && eleventy",
     "dev:css": "postcss src/css/tailwind.css -o public/css/styles.css",
-    "build": "pnpm clean && pnpm pretty && pnpm build:css && eleventy",
+    "build": "pnpm clean && pnpm build:css && eleventy",
     "build:publish": "pnpm clean && pnpm build:css && eleventy",
     "build:css": "cross-env NODE_ENV=production postcss src/css/tailwind.css -o public/css/styles.css"
   },
@@ -38,22 +37,8 @@
     "daisyui": "^1.16.1",
     "postcss": "^8.3.11",
     "postcss-cli": "^9.0.1",
-    "prettier": "^2.4.1",
     "rimraf": "^3.0.2",
     "tailwindcss": "^2.2.19",
     "watch": "^1.0.2"
-  },
-  "prettier": {
-    "printWidth": 120,
-    "proseWrap": "always",
-    "endOfLine": "lf",
-    "tabWidth": 2,
-    "useTabs": false,
-    "overrides": [
-      {
-        "files": "*.liquid",
-        "options": { "parser": "html" }
-      }
-    ]
   }
 }

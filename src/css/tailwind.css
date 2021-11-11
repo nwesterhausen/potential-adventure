@@ -3,18 +3,3 @@
 @tailwind components;
 
 @tailwind utilities;
-
-@layer base {
-  h1 {
-    @apply text-2xl;
-  }
-  h2 {
-    @apply text-xl;
-  }
-  .quote {
-    @apply p-4 md:pr-8 my-2 space-y-2 shadow bg-opacity-10 bg-accent tracking-wide;
-  }
-  .quote p {
-    @apply text-justify;
-  }
-}

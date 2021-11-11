@@ -7,8 +7,9 @@ KindredSpirits: ["Ònul", "Logan", "Astesh", "Edëm", "Solon"]
 CloseFriends: ["Unib"]
 Friends: []
 JoinedAt: Embark
-Arrival:
+Arrival: 700-1-15
 Portrait:
+Quote: "In life, you should work hard. Then work harder."
 ---
 
 ### Zefon Bernokim, "Zefon Earthochre", Armorer

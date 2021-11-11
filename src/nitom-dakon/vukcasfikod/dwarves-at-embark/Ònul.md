@@ -7,8 +7,9 @@ KindredSpirits: ["Kogan", "Astesh", "Edëm", "Solon"]
 CloseFriends: ["Zefon"]
 Friends: ["Unib"]
 JoinedAt: Embark
-Arrival:
+Arrival: 700-1-15
 Portrait:
+Quote: "You should always tell the truth."
 ---
 
 ### Ònul Idokcilob, "Ònul Pointedroof", Weaponsmith

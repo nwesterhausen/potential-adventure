@@ -17,8 +17,17 @@ Idith" %} {% assign fortname = "Vukcasfikod" %} {% block content %}
 </div>
 
 <h1>Stories</h1>
-{% for story in collections.vukcasfikodStories %} {% include "partials/collapse", storytitle: story.data.title,
-storylead: story.data.summary, storyauthor: story.data.author, storyurl: story.url %} {% endfor %}
+{% for story in collections.vukcasfikodStories %}
+<div tabindex="0" class="collapse hover:bg-white hover:bg-opacity-5">
+  <input type="checkbox" />
+  <div class="collapse-title text-xl font-medium">{{ story.data.title }}</div>
+  <div class="collapse-content">
+    <p class="mb-2">{{ story.data.summary }}</p>
+    <a class="btn btn-sm" href="{{ story.url }}">Read</a>
+    <br />
+  </div>
+</div>
+{% endfor %}
 
 <h1>Dwarves</h1>
 <div class="collapse collapse-arrow">
@@ -27,6 +36,16 @@ storylead: story.data.summary, storyauthor: story.data.author, storyurl: story.u
   <div class="collapse-content">
     <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-2">
       {% for dwarf in collections.vukcasfikodDwarvesEmbark %} {% include "components/dwarf-card", dwarf: dwarf.data %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<div class="collapse collapse-arrow">
+  <input type="checkbox" />
+  <div class="collapse-title">13 Dwarves, snapshot from Malachite of year 700</div>
+  <div class="collapse-content">
+    <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-2">
+      {% for dwarf in collections.vukcasfikodDwarves1stSummer %} {% include "components/dwarf-card", dwarf: dwarf.data %}
       {% endfor %}
     </div>
   </div>

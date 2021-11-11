@@ -7,8 +7,9 @@ KindredSpirits: ["Zefon", "Astesh", "Edëm", "Solon"]
 CloseFriends: ["Ònul", "Kogan"]
 Friends: []
 JoinedAt: Embark
-Arrival:
+Arrival: 700-1-15
 Portrait:
+Quote: "It really gets me down sometimes."
 ---
 
 ### Unib Sobìrkulet, "Unib Releaseabbeys", Engraver

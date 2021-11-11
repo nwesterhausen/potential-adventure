@@ -9,7 +9,6 @@ specifiers:
   daisyui: ^1.16.1
   postcss: ^8.3.11
   postcss-cli: ^9.0.1
-  prettier: ^2.4.1
   rimraf: ^3.0.2
   tailwindcss: ^2.2.19
   watch: ^1.0.2
@@ -23,7 +22,6 @@ devDependencies:
   daisyui: 1.16.1
   postcss: 8.3.11
   postcss-cli: 9.0.1_postcss@8.3.11
-  prettier: 2.4.1
   rimraf: 3.0.2
   tailwindcss: 2.2.19_0c54bdadaf9d9c9c6c134cb2c6c061a3
   watch: 1.0.2
@@ -1292,6 +1290,7 @@ packages:
     resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -2635,12 +2634,6 @@ packages:
       source-map-js: 0.6.2
     dev: true
 
-  /prettier/2.4.1:
-    resolution: {integrity: sha512-9fbDAXSBcc6Bs1mZrDYb3XKzDLm4EXXL9sC1LqKP5rZkT6KRr/rf9amVUcODVXgguK/isJz0d0hP72WeaKWsvA==}
-    engines: {node: '>=10.13.0'}
-    hasBin: true
-    dev: true
-
   /pretty-hrtime/1.0.3:
     resolution: {integrity: sha1-t+PqQkNaTJsnWdmeDyAesZWALuE=}
     engines: {node: '>= 0.8'}
@@ -3344,6 +3337,7 @@ packages:
     resolution: {integrity: sha512-mic3aOdiq01DuSVx0TseaEzMIVqebMZ0Z3vaeDhFEh9bsc24hV1TFvN74reA2vs08D0ZWfNjAcJ3UbVLaBss+g==}
     engines: {node: '>=0.8.0'}
     hasBin: true
+    requiresBuild: true
     dev: true
     optional: true
 

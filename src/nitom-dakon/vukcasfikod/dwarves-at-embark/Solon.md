@@ -7,8 +7,9 @@ KindredSpirits: ["Edëm"]
 CloseFriends: ["Unib", "Zefon", "Kogan", "Astesh"]
 Friends: ["Ònul"]
 JoinedAt: Embark
-Arrival:
+Arrival: 700-1-15
 Portrait:
+Quote: "I feel fine."
 ---
 
 ### Solon Olintun, "Solon Tongsdoors", Mason

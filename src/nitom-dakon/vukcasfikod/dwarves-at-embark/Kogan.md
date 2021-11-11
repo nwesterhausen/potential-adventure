@@ -7,8 +7,9 @@ KindredSpirits: ["Astesh", "Solon"]
 CloseFriends: ["Zefon", "Ònul", "Edëm"]
 Friends: ["Unib"]
 JoinedAt: Embark
-Arrival:
+Arrival: 700-1-15
 Portrait:
+Quote: "Everything's alright."
 ---
 
 ### Kogan Rakustil, "Kogan Tombwords", Gem Setter

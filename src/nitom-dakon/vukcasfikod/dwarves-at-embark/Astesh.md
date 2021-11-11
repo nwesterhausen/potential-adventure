@@ -1,14 +1,15 @@
 ---
 Name: Astesh Konosulåb
 TranslatedName: Brasssquirt
-Profession: expedition leader
+Profession: Expedition Leader
 Deities: Izeg Asàs Ishlum
 KindredSpirits: ["Unib", "Edëm", "Solon"]
 CloseFriends: ["Zefon", "Ònul", "Kogan"]
 Friends: []
 JoinedAt: Embark
-Arrival:
+Arrival: 700-1-15
 Portrait:
+Quote: "It's best to slow down and just relax."
 ---
 
 ### Astesh Konosulåb, "Astesh Brasssquirt", expedition leader

@@ -7,8 +7,9 @@ KindredSpirits: []
 CloseFriends: ["Ònul", "Logan", "Astesh", "Unib", "Kogan", "Solon"]
 Friends: []
 JoinedAt: Embark
-Arrival:
+Arrival: 700-1-15
 Portrait:
+Quote: "I feel well."
 ---
 
 ### Edëm Oddomthad, "Edëm Cloistercrowd", Mechanic
