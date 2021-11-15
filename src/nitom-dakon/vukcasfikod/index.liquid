@@ -32,7 +32,7 @@ Idith" %} {% assign fortname = "Vukcasfikod" %} {% block content %}
 <h1>Dwarves</h1>
 <div class="collapse collapse-arrow">
   <input type="checkbox" />
-  <div class="collapse-title">The Embarking 7, snapshot from Granite of year 700</div>
+  <div class="collapse-title">7 Dwarves at embark, {{ "700-1-15" | dfDateStrFmt }}</div>
   <div class="collapse-content">
     <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-2">
       {% for dwarf in collections.vukcasfikodDwarvesEmbark %} {% include "components/dwarf-card", dwarf: dwarf.data %}
@@ -42,10 +42,20 @@ Idith" %} {% assign fortname = "Vukcasfikod" %} {% block content %}
 </div>
 <div class="collapse collapse-arrow">
   <input type="checkbox" />
-  <div class="collapse-title">13 Dwarves, snapshot from Malachite of year 700</div>
+  <div class="collapse-title">13 Dwarves by Summer, {{ "700-05-11" | dfDateStrFmt }}</div>
   <div class="collapse-content">
     <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-2">
       {% for dwarf in collections.vukcasfikodDwarves1stSummer %} {% include "components/dwarf-card", dwarf: dwarf.data %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<div class="collapse collapse-arrow">
+  <input type="checkbox" />
+  <div class="collapse-title">18 Dwarves by Autumn, {{ "700-09-10" | dfDateStrFmt }}</div>
+  <div class="collapse-content">
+    <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-2">
+      {% for dwarf in collections.vukcasfikodDwarves1stFall %} {% include "components/dwarf-card", dwarf: dwarf.data %}
       {% endfor %}
     </div>
   </div>
