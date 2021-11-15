@@ -7,7 +7,7 @@ KindredSpirits: ["Astesh","Ònul", "Solon"]
 CloseFriends: ["Unib","Zefon",  "Edëm"]
 Friends: []
 JoinedAt: Embark
-Arrival: 700-1-15
+Arrival: 0700-01-15
 Portrait:
 Quote: "The creative impulse is so valuable."
 ---

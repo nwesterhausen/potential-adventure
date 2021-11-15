@@ -7,7 +7,7 @@ KindredSpirits: ["Astesh", "Solon"]
 CloseFriends: ["Zefon", "Ònul", "Edëm"]
 Friends: ["Unib"]
 JoinedAt: Embark
-Arrival: 700-1-15
+Arrival: 0700-01-15
 Portrait:
 Quote: "Everything's alright."
 ---

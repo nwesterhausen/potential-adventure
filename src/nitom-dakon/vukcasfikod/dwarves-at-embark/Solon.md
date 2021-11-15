@@ -7,7 +7,7 @@ KindredSpirits: ["Edëm"]
 CloseFriends: ["Unib", "Zefon", "Kogan", "Astesh"]
 Friends: ["Ònul"]
 JoinedAt: Embark
-Arrival: 700-1-15
+Arrival: 0700-01-15
 Portrait:
 Quote: "I feel fine."
 ---

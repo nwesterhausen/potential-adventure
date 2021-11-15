@@ -7,7 +7,7 @@ KindredSpirits: ["Kogan", "Astesh", "Edëm", "Solon"]
 CloseFriends: ["Zefon"]
 Friends: ["Unib"]
 JoinedAt: Embark
-Arrival: 700-1-15
+Arrival: 0700-01-15
 Portrait:
 Quote: "You should always tell the truth."
 ---

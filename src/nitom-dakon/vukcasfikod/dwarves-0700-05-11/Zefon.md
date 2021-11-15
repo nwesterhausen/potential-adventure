@@ -7,7 +7,7 @@ KindredSpirits: ["Ònul", "Logan", "Astesh", "Edëm", "Solon"]
 CloseFriends: ["Unib"]
 Friends: []
 JoinedAt: Embark
-Arrival: 700-1-15
+Arrival: 0700-01-15
 Portrait:
 Quote: "One should always respect the law."
 ---

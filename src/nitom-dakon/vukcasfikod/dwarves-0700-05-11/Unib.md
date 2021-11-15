@@ -7,7 +7,7 @@ KindredSpirits: ["Zefon", "Astesh", "Edëm", "Solon"]
 CloseFriends: ["Ònul", "Kogan"]
 Friends: []
 JoinedAt: Embark
-Arrival: 700-1-15
+Arrival: 0700-01-15
 Portrait:
 Quote: "I'm doing alright."
 ---

@@ -2,7 +2,7 @@
 Name: Tholtig Geshudanam
 TranslatedName: Fortressage
 Profession: Craftsdwarf 
-Arrival: 700-05-13
+Arrival: 0700-05-13
 Portrait:
 JoinedAt: 1st Migration Wave
 Lovers: []

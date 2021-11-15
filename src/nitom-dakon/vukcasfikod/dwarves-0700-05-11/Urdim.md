@@ -2,7 +2,7 @@
 Name: Urdim Nicatsibrek
 TranslatedName: Chainsalves
 Profession: Pump Operator 
-Arrival: 700-05-13
+Arrival: 0700-05-13
 Portrait:
 JoinedAt: 1st Migration Wave
 Lovers: ["Rigoth Zuntirnimak"]

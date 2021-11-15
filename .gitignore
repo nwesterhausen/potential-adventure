@@ -3,5 +3,3 @@ node_modules/
 public/
 
 src/css/styles.css
-
-_scripts/**/bin

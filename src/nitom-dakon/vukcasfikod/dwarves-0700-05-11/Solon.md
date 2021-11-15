@@ -7,7 +7,7 @@ KindredSpirits: ["Kogan", "Edëm"]
 CloseFriends: ["Unib", "Zefon",  "Astesh"]
 Lovers: ["Ònul"]
 JoinedAt: Embark
-Arrival: 700-1-15
+Arrival: 0700-01-15
 Portrait:
 Quote: "Everything is so much easier when you just tell the truth."
 ---

@@ -7,7 +7,7 @@ KindredSpirits: ["Unib", "Edëm", "Solon"]
 CloseFriends: ["Zefon", "Ònul", "Kogan"]
 Friends: []
 JoinedAt: Embark
-Arrival: 700-1-15
+Arrival: 0700-01-15
 Portrait:
 Quote: "I am a very, very important person."
 ---

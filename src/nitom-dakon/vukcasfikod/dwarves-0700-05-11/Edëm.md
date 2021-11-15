@@ -7,7 +7,7 @@ KindredSpirits: []
 CloseFriends: ["Ònul", "Logan", "Astesh", "Unib", "Kogan", "Solon"]
 Friends: []
 JoinedAt: Embark
-Arrival: 700-1-15
+Arrival: 0700-01-15
 Portrait:
 Quote: "You can always rely on your family when everything else falls away."
 ---

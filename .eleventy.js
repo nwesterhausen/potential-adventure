@@ -8,6 +8,7 @@ module.exports = function (eleventyConfig) {
   // });
 
   eleventyConfig.addLiquidFilter("dfDateStrFmt", stringFormatDfIsoDate);
+  eleventyConfig.addLiquidFilter("vukcasfikodArrivals", vukcasfikodArrivals);
 
   return {
     dir: {
@@ -16,6 +17,23 @@ module.exports = function (eleventyConfig) {
     }
   };
 };
+
+function vukcasfikodArrivals(value) {
+  if (value.toISOString) {
+    value = value.toISOString().split('T')[0];
+  }
+  switch(value) {
+  case "0700-01-15":
+    return "Embark";
+  case "0700-05-13": 
+    return "1st Migration Wave";
+  case "0700-09-02": 
+    return "2nd Migration Wave";
+  default:
+    console.log(`switch(${value}) matches default?`);
+    return value;
+  }
+}
 
 function stringFormatDfIsoDate(value) {
   const MONTH = [
