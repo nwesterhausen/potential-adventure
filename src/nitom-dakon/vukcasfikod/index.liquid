@@ -60,5 +60,15 @@ Idith" %} {% assign fortname = "Vukcasfikod" %} {% block content %}
     </div>
   </div>
 </div>
+<div class="collapse collapse-arrow">
+  <input type="checkbox" />
+  <div class="collapse-title">36 Dwarves by Spring, {{ "701-02-13" | dfDateStrFmt }}</div>
+  <div class="collapse-content">
+    <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-2">
+      {% for dwarf in collections.vukcasfikodDwarves2ndSpring %} {% include "components/dwarf-card", dwarf: dwarf.data %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
 
 {% endblock %}
