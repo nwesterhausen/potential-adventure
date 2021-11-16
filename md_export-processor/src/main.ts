@@ -134,17 +134,20 @@ const READER = readline.createInterface({
 })
 
 let dwarf: Dwarf;
+let counter = 0;
 READER.on("line", line => {    
     let capture = line.match(DWARF_HEADER_CAPTURE);
     if (capture && capture.groups) {
         if (dwarf && dwarf.Name !== "") {
             // flush
             fs.writeFileSync(path.join(OUT, dwarf.filename), dwarf.toMarkdown());
+            counter ++;
         }
         dwarf = new Dwarf(capture.groups.firstname);
         dwarf.Name = capture.groups.firstname+" "+capture.groups.lastname;
         dwarf.TranslatedName = capture.groups.trname;
         dwarf.Profession = transformStrTitleCase(capture.groups.profession);
+        console.log(colors.brightBlue(dwarf.Name) + ", "+colors.yellow(dwarf.Profession));
     }
     if (dwarf && dwarf.Name !== "")
     {
@@ -194,4 +197,8 @@ READER.on("line", line => {
         }
         dwarf.filecontent.push(cleanLine);
     }
+})
+
+READER.on("close", () => {
+    console.log("Processed "+colors.cyan(counter)+" dwarves.")
 })
