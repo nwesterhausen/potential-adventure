@@ -242,7 +242,6 @@ end
 
 if flerb == 'textviewer' then
     local scrn = scrn --as:df.viewscreen_textviewerst
-    printObj(scrn)
     local lines = scrn.src_text
 
     if lines ~= nil then
