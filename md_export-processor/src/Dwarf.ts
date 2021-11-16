@@ -10,6 +10,10 @@ export class Dwarf {
     Quote: string = "";
     filecontent: string[] = [];
     MemberOf: string[] = [];
+    PassingAcquaintance: string[] = [];
+    Friends: string[] = [];
+    Lovers: string[] = [];
+    Pets: string[] = [];
 
     constructor(name: string) {
         this.filename = `${name}.md`;
@@ -24,18 +28,19 @@ Arrival: ${this.Arrival}
 Birthday: ${this.Birthday}
 Portrait:
 JoinedAt: 
-Lovers: []
+Lovers: ${JSON.stringify(this.Lovers)}
 Spouses: []
 KindredSpirits: []
 CloseFriends: []
-Friends: []
+Friends: ${JSON.stringify(this.Friends)}
 FriendlyTerms: []
 LongtermAcquaintance: []
-PassingAcquaintance: []
+PassingAcquaintance: ${JSON.stringify(this.PassingAcquaintance)}
 Grudges: []
 MemberOf: ${JSON.stringify(this.MemberOf)}
 Dream: ${this.Dream}
 Deities: ${JSON.stringify(this.Dieties)}
+Pets: ${JSON.stringify(this.Pets)}
 Quote: ${this.Quote}
 ---\n`
     }

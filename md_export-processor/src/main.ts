@@ -14,12 +14,16 @@ const OUT = path.join(process.cwd(), DEST);
 
 /// REGEX
 const DWARF_HEADER_CAPTURE = new RegExp(/###   (?<firstname>\S+) (?<lastname>\S+), "\S+ (?<trname>\S+)", (?<profession>.+)/);
-const DWARF_WORSHIPPER_CAPTURE = new RegExp(/worshipper of (?<diety>[^.]+)./);
 const DWARF_QUOTE_CAPTURE = new RegExp(/^(?<quote>".+")/);
 const DWARF_ARRIVAL_CAPTURE = new RegExp(/(She|He|They) arrived at (?<fort>.+) on the (?<day>\d+)(nd|rd|th|st) of (?<month>\S+) in the year (?<year>\d+)/);
 const DWARF_MEMBERSHIP_CAPTURE = new RegExp(/a member of (?<membership>[^.]+)./g);
 const DWARF_BIRTHDAY_CAPTURE = new RegExp(/born on the (?<day>\d+)(nd|rd|th|st) of (?<month>\S+) in the year (?<year>\d+)/);
 const DWARF_DREAM_CAPTURE = new RegExp(/dreams of (?<dream>[^.]+)./);
+const RELATIONSHIP_WORSHIP_CAPTURE = new RegExp(/Worship: "(?<name>.+)"/);
+const RELATIONSHIP_ACQUAINTANCE_CAPTURE = new RegExp(/AcquaintancePassing: "(?<name>.+)"/);
+const RELATIONSHIP_FRIEND_CAPTURE = new RegExp(/Friend: "(?<name>.+)"/);
+const RELATIONSHIP_LOVER_CAPTURE = new RegExp(/Lover: "(?<name>.+)"/);
+const RELATIONSHIP_PET_CAPTURE = new RegExp(/Pet: "(?<name>.+)"/);
 
 const MONTH = [
     "Granite",
@@ -157,13 +161,29 @@ READER.on("line", line => {
         if (cap && cap.groups) {
             dwarf.Quote = cap.groups.quote;
         }
-        cap = cleanLine.match(DWARF_WORSHIPPER_CAPTURE);
-        if (cap && cap.groups) {
-            dwarf.Dieties.push(cap.groups.diety);
-        }
         cap = cleanLine.match(DWARF_DREAM_CAPTURE);
         if (cap && cap.groups) {
             dwarf.Dream = cap.groups.dream;
+        }
+        cap = cleanLine.match(RELATIONSHIP_WORSHIP_CAPTURE);
+        if (cap && cap.groups) {
+            dwarf.Dieties.push(cap.groups.name);
+        }
+        cap = cleanLine.match(RELATIONSHIP_ACQUAINTANCE_CAPTURE);
+        if (cap && cap.groups) {
+            dwarf.PassingAcquaintance.push(cap.groups.name);
+        }
+        cap = cleanLine.match(RELATIONSHIP_FRIEND_CAPTURE);
+        if (cap && cap.groups) {
+            dwarf.Friends.push(cap.groups.name);
+        }
+        cap = cleanLine.match(RELATIONSHIP_LOVER_CAPTURE);
+        if (cap && cap.groups) {
+            dwarf.Lovers.push(cap.groups.name);
+        }
+        cap = cleanLine.match(RELATIONSHIP_PET_CAPTURE);
+        if (cap && cap.groups) {
+            dwarf.Pets.push(cap.groups.name);
         }
         let gcap = cleanLine.matchAll(DWARF_MEMBERSHIP_CAPTURE);
         let gcaparr = Array.from(gcap, m => m[1]);
