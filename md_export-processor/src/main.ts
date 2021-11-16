@@ -107,11 +107,13 @@ function transformStrTitleCase(str: string): string {
     );
 }
 
-function generateInfoJson() {
+function generateInfoJson(deities: string[], groups: string[]) {
     return `{
     "tags": ["dwarf"],
     "permalink": false,
-    "date": "${DATE}"
+    "date": "${DATE}",
+    "deities": ${JSON.stringify(deities)},
+    "groups": ${JSON.stringify(groups)}
 }`
 }
 
@@ -127,14 +129,13 @@ if (!fs.existsSync(OUT))
     }
 }
 
-fs.writeFileSync(path.join(OUT, `${DEST}.json`), generateInfoJson());
-
 const READER = readline.createInterface({
     input: fs.createReadStream(IN)
 })
 
 let dwarf: Dwarf;
 let counter = 0;
+let dwarfGroups: string[] = [], deities: string[] = [];
 READER.on("line", line => {    
     let capture = line.match(DWARF_HEADER_CAPTURE);
     if (capture && capture.groups) {
@@ -171,6 +172,9 @@ READER.on("line", line => {
         cap = cleanLine.match(RELATIONSHIP_WORSHIP_CAPTURE);
         if (cap && cap.groups) {
             dwarf.Dieties.push(cap.groups.name);
+            if (deities.indexOf(cap.groups.name) == -1) {
+                deities.push(cap.groups.name);
+            }
         }
         cap = cleanLine.match(RELATIONSHIP_ACQUAINTANCE_CAPTURE);
         if (cap && cap.groups) {
@@ -193,6 +197,9 @@ READER.on("line", line => {
         if (gcaparr.length) {
             for (const match of gcaparr) {
               dwarf.MemberOf.push(match.trim())
+              if (dwarfGroups.indexOf(match.trim()) == -1) {
+                dwarfGroups.push(match.trim());
+              }
             }
         }
         dwarf.filecontent.push(cleanLine);
@@ -201,4 +208,7 @@ READER.on("line", line => {
 
 READER.on("close", () => {
     console.log("Processed "+colors.cyan(counter)+" dwarves.")
+    console.log(deities.length + colors.green(" worshipped deities."))
+    console.log(dwarfGroups.length + colors.green(" separate groups (govt/religion/guild)."))
+    fs.writeFileSync(path.join(OUT, `${DEST}.json`), generateInfoJson(deities, dwarfGroups));
 })
