@@ -115,3 +115,34 @@ into the fortress, and to secure it from the wild beasts.
 
 Right now, the traders are still close by -- they seem to have gotten distracted killing some
 langurs on their way out and have stalled.
+
+***
+
+Traded with elves in spring.. for some animals which we butchered and some more barrels/buckets and
+other wooden things.
+
+Traded with humans in summer. The request:
+
+Ammunition HIGH demand, +180% value
+Earrings HIGH demand, +193%
+Maces MED demand, +180%
+
+We traded away the last of our goblets in exchange for some food (can never have too much), and
+some barrels. It should be pretty easy to make some glass or metal earrings and hopefully we
+can get a pretty good haul.
+
+More migrants arrived and now we're at the capacity we're keeping until the fort can sustain itself.
+The apartments continue to come along, we've got half of the dwarves assigned. Each apartment has
+a bedroom, dining room and study. This is a nice luxury for our dwarves. 
+
+The well is still dry but slowly filling up. The aquifer is very weak and I think that's partially
+due to being in a desert. 
+
+No farm yet! Had to dig an access tunnel for dumping water above the farm area but there end up
+being too many wild animals in the forest area of the map (where standing water is) to be able to
+dump water safely/quickly. I think it will be best if we can just use the well.
+
+The hospital is designated. Need to get soap still.
+
+No barracks or military. I want to get this started soon, but want to have all the bedrooms completed
+and at least be in a stable state.
