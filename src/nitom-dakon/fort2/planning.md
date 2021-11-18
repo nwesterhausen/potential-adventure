@@ -146,3 +146,28 @@ The hospital is designated. Need to get soap still.
 
 No barracks or military. I want to get this started soon, but want to have all the bedrooms completed
 and at least be in a stable state.
+
+***
+
+Took a snapshot of dwarves on 702-10-1, beginning of winter.
+
+Spring arrived we traded some of the goods left by the dwarven merchants for more barrels and cages.
+
+The temple is getting a lot of use, dwarves use it very often. 
+
+A barracks is built, just have to get some military stuff sorted out.
+
+Started hunting some of the wild animals near the fortress.
+
+Baby born on 703-02-19.
+
+Traded with elves again. Got more animals to slaughter and some barrels/buckets.
+
+In summer, human caravan arrived w/ the representative from the merchant guild. Traded some of the stuff
+left by the 1st year dwarven caravan and got a ton of different foods (they literally brought 3 wagons of
+different food).
+
+The well overflowed!! Had to make some emergency access tunnels to install a floodgate. Now we have control
+over the water entering the cistern via a lever. We won't go thirsty!
+
+In fall, the dwarven caravan arrived with a liason!
