@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@types/node': ^16.11.7
+  '@types/node': ^18.0.0
   '@types/readline-sync': ^1.4.4
   colors: ^1.4.0
   readline-sync: ^1.4.10
@@ -9,11 +9,11 @@ specifiers:
   typescript: ^4.4.4
 
 dependencies:
-  '@types/node': 16.11.7
+  '@types/node': 18.11.18
   '@types/readline-sync': 1.4.4
   colors: 1.4.0
   readline-sync: 1.4.10
-  ts-node: 10.4.0_ee928ac548ac44c173bf0d4654ae2c29
+  ts-node: 10.4.0_b8ffa534840ab2b17b61b5639b0cafc2
   typescript: 4.4.4
 
 packages:
@@ -46,8 +46,8 @@ packages:
     resolution: {integrity: sha512-eZxlbI8GZscaGS7kkc/trHTT5xgrjH3/1n2JDwusC9iahPKWMRvRjJSAN5mCXviuTGQ/lHnhvv8Q1YTpnfz9gA==}
     dev: false
 
-  /@types/node/16.11.7:
-    resolution: {integrity: sha512-QB5D2sqfSjCmTuWcBWyJ+/44bcjO7VbjSbOE0ucoVbAsSNQc4Lt6QkgkVXkTDwkL4z/beecZNDvVX15D4P8Jbw==}
+  /@types/node/18.11.18:
+    resolution: {integrity: sha512-DHQpWGjyQKSHj3ebjFI/wRKcqQcdR+MoFBygntYOZytCqNfkd2ZC4ARDJ2DQqhjH5p85Nnd3jhUJIXrszFX/JA==}
     dev: false
 
   /@types/readline-sync/1.4.4:
@@ -92,7 +92,7 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: false
 
-  /ts-node/10.4.0_ee928ac548ac44c173bf0d4654ae2c29:
+  /ts-node/10.4.0_b8ffa534840ab2b17b61b5639b0cafc2:
     resolution: {integrity: sha512-g0FlPvvCXSIO1JDF6S232P5jPYqBkRL9qly81ZgAOSU7rwI0stphCgd2kLiCrU9DjQCrJMWEqcNSjQL02s6d8A==}
     hasBin: true
     peerDependencies:
@@ -111,7 +111,7 @@ packages:
       '@tsconfig/node12': 1.0.9
       '@tsconfig/node14': 1.0.1
       '@tsconfig/node16': 1.0.2
-      '@types/node': 16.11.7
+      '@types/node': 18.11.18
       acorn: 8.5.0
       acorn-walk: 8.2.0
       arg: 4.1.3
