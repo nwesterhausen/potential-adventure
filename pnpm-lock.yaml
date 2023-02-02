@@ -12,7 +12,7 @@ specifiers:
   daisyui: ^2.2.2
   postcss: ^8.4.7
   postcss-cli: ^9.1.0
-  rimraf: ^3.0.2
+  rimraf: ^4.0.0
   tailwindcss: ^3.0.23
   watch: ^1.0.2
 
@@ -25,7 +25,7 @@ devDependencies:
   daisyui: 2.2.2_4585f94de3eac54c17be782e8b51352c
   postcss: 8.4.7
   postcss-cli: 9.1.0_postcss@8.4.7
-  rimraf: 3.0.2
+  rimraf: 4.1.2
   tailwindcss: 3.0.23_autoprefixer@10.4.2
   watch: 1.0.2
 
@@ -103,6 +103,8 @@ packages:
     resolution: {integrity: sha512-7yJPvPV+ESz2IUTPbOL+YkIGyCqOyNIzdguKQuJGnH7bg1WTIifuM21YqokFt/THWh1AkCRn9IgoykTRCBVpzA==}
     engines: {node: '>=6.0.0'}
     hasBin: true
+    dependencies:
+      '@babel/types': 7.17.0
     dev: true
 
   /@babel/types/7.17.0:
@@ -2662,11 +2664,10 @@ packages:
       glob: 7.2.0
     dev: true
 
-  /rimraf/3.0.2:
-    resolution: {integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==}
+  /rimraf/4.1.2:
+    resolution: {integrity: sha512-BlIbgFryTbw3Dz6hyoWFhKk+unCcHMSkZGrTFVAx2WmttdBSonsdtRlwiuTbDqTKr+UlXIUqJVS4QT5tUzGENQ==}
+    engines: {node: '>=14'}
     hasBin: true
-    dependencies:
-      glob: 7.2.0
     dev: true
 
   /run-parallel/1.2.0:
