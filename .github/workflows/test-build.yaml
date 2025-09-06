@@ -22,7 +22,7 @@ jobs:
           node-version: '14'
       - uses: pnpm/action-setup@v2.4.1
         with:
-          version: 6.0.2
+          version: 6.35.1
           run_install: |
             - args: [--frozen-lockfile]
       # Build
